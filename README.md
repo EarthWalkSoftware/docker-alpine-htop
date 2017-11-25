@@ -27,7 +27,7 @@ The container is exited by giving focus to the container and then using the *ctr
 
 ---------------------
 ### Docker Image
-A docker image is available for download from ** earthwalksoftware/alpine-htop ** on ** Docker Hub **
+A docker image is available for download from **earthwalksoftware/alpine-htop** on **Docker Hub**
 
     docker pull earthwalksoftware/alpine-htop
 
