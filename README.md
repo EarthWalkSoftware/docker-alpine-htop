@@ -1,2 +1,42 @@
-# docker-alpine-htop
-htop for docker host in an Alpine Linux container.
+# EarthWalkSoftware/docker-alpine-htop
+--------------------- 
+
+This is a very small **Alpine Linux** implementation of the *htop* example in the **docker run** reference (see below).  It is a simple example of the use of the built-in **PID Namespace** (*--pid=host*) Linux virtualization function.
+
+The **Dockerfile** for the *alpine-htop* image is short and simple, and can easily be entered from a console editor.  However, I use this example a lot and have tired of entering it for each use. Hence, this image.
+
+---------------------
+
+### Dockerfile
+
+    FROM alpine:3.6
+    RUN apk add --update htop && rm -rf /var/cache/apk/*
+    CMD ["htop"]**
+
+---------------------
+
+### Running alpine-htop
+The following line will install and run **earthwalksoftware/alpine-htop**:
+
+    docker run -it --rm --pid=host earthwalksoftware/alpine-htop:latest 
+
+---------------------
+
+### Exiting alpine-htop
+The container is exited by giving focus to the container and then using the *ctrl-c* keyboard combination to exit the container. 
+
+---------------------
+### Docker Image
+A docker image is available for download from ** earthwalksoftware/alpine-htop ** on ** Docker Hub **
+
+    docker pull earthwalksoftware/alpine-htop
+
+***
+#### Licensed by Academic Free License v 3.0
+Read the license at https://github.com/EarthWalkSoftware/docker-alpine-LAMPS/wiki/License
+
+---------------------
+
+### Attribution
+
+ Based on example **run htop inside a container** from the **docker run** reference at       https://docs.docker.com/engine/reference/run/#example-run-htop-inside-a-container
