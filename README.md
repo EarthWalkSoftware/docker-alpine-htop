@@ -1,13 +1,13 @@
 # EarthWalkSoftware/docker-alpine-htop
 --------------------- 
 
-This is a very small (8 MB) **Alpine Linux** docker implementation of the *htop* example in the **docker run** reference (see below).  It is a simple example of the use of the built-in **PID Namespace** (*--pid=*) Linux virtualization function.
+This is a very small (8 MB) **Alpine Linux** docker implementation of the *htop* example in the **docker run** reference (see below).  It is a simple example of the use of the built-in **PID Namespace** (*--pid=*) Linux virtualization.
 
 The **Dockerfile** for the *alpine-htop* image is short and simple, and can easily be entered from a console editor.  However, I use this example a lot and have tired of entering it for each use. Hence, this image.
 
 ---------------------
 ### Docker Image
-A docker image is available for download from **earthwalksoftware/alpine-htop** on **Docker Hub**
+A docker image is available for download from **[earthwalksoftware/alpine-htop](https://hub.docker.com/r/earthwalksoftware/alpine-htop)** on **[Docker Hub](https://hub.docker.com/)**
 
     docker pull earthwalksoftware/alpine-htop
 
@@ -22,7 +22,7 @@ A docker image is available for download from **earthwalksoftware/alpine-htop** 
 ---------------------
 
 ### Running alpine-htop
-The following line will install and run **earthwalksoftware/alpine-htop**:
+The following line will install and run **[earthwalksoftware/alpine-htop](https://hub.docker.com/r/earthwalksoftware/alpine-htop)**:
 
     docker run -it --rm --pid=host earthwalksoftware/alpine-htop:latest 
 
@@ -33,7 +33,7 @@ The container is exited by giving focus to the container and then using the *ctr
 
 ***
 #### Licensed by Academic Free License v 3.0
-Read the license at https://github.com/EarthWalkSoftware/docker-alpine-LAMPS/wiki/License
+Read the license at https://github.com/EarthWalkSoftware/docker-alpine-htop/wiki/License
 
 ---------------------
 
