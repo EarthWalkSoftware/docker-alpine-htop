@@ -1,7 +1,7 @@
 # EarthWalkSoftware/docker-alpine-htop
 --------------------- 
 
-This is a very small (8 MB) **Alpine Linux** docker implementation of the *htop* example in the **docker run** reference (see below).  It is a simple example of the use of the built-in **PID Namespace** (*--pid=host*) Linux virtualization function.
+This is a very small (8 MB) **Alpine Linux** docker implementation of the *htop* example in the **docker run** reference (see below).  It is a simple example of the use of the built-in **PID Namespace** (*--pid=*) Linux virtualization function.
 
 The **Dockerfile** for the *alpine-htop* image is short and simple, and can easily be entered from a console editor.  However, I use this example a lot and have tired of entering it for each use. Hence, this image.
 
