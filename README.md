@@ -6,6 +6,12 @@ This is a very small **Alpine Linux** implementation of the *htop* example in th
 The **Dockerfile** for the *alpine-htop* image is short and simple, and can easily be entered from a console editor.  However, I use this example a lot and have tired of entering it for each use. Hence, this image.
 
 ---------------------
+### Docker Image
+A docker image is available for download from **earthwalksoftware/alpine-htop** on **Docker Hub**
+
+    docker pull earthwalksoftware/alpine-htop
+
+---------------------
 
 ### Dockerfile
 
@@ -24,12 +30,6 @@ The following line will install and run **earthwalksoftware/alpine-htop**:
 
 ### Exiting alpine-htop
 The container is exited by giving focus to the container and then using the *ctrl-c* keyboard combination to exit the container. 
-
----------------------
-### Docker Image
-A docker image is available for download from **earthwalksoftware/alpine-htop** on **Docker Hub**
-
-    docker pull earthwalksoftware/alpine-htop
 
 ***
 #### Licensed by Academic Free License v 3.0
